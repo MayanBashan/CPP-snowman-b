@@ -4,7 +4,6 @@
 
 #include "snowman.hpp"
 #include <iostream>
-#include <stdexcept>
 #include <math.h>
 using namespace std;
 const int mindig = 1;
