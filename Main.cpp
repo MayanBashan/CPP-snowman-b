@@ -14,15 +14,15 @@ const int maxdig = 4;
 int random_number(){
 	int rand_dig = 0;
 	int ans = 0;
-	for (int i=8; i>=1; i--){
+	for (int i=7; i>=0; i--){
 		rand_dig = rand() % maxdig + mindig;
-		ans += rand_dig*(pow(10,i-1));
+		ans += rand_dig*(pow(10,i));
 	}
 	return ans;
 }
 
-// prints 100 random snowmen
 int main() {
+	// prints 100 random snowmen
 	int snowman_number;
 	for (int i=0; i<100; i++){
 		snowman_number = random_number();
@@ -31,6 +31,8 @@ int main() {
 		cout << "Random snowman is:" << "\t";
 		cout << ariel::snowman(snowman_number) + "\n" << endl;
 	}
+
+	// asks the user to insert a 8 digit number
 	int user_input;
 	int flag = 1;
 	while (flag){
