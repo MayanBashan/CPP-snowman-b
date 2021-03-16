@@ -22,5 +22,6 @@ namespace ariel{
     string downwards_rightarm_string(int number);
     string torso_string(int number);
     string base_string(int number);
+    int digit_in_given_index(int number, int index);
     int random_number();
 }
