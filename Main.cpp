@@ -34,7 +34,7 @@ int main() {
 	int user_input;
 	int flag = 1;
 	while (flag){
-		cout << "Above you have multiple examples of snowmen, you can choose one, or choose a new one - \nPlease enter 8 digit number: " << endl;
+		cout << "Above you have multiple examples of snowmen, you can choose one of them, or choose a new one - \nPlease enter 8 digit number: " << endl;
 		try{
 			cin >> user_input;
 			cout << ariel::snowman(user_input) << endl;
